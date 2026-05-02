@@ -1,6 +1,6 @@
 #  Credit Card Fraud Detection using Machine Learning
 
-##  Project Overview
+##   Project Overview
 This project is a **Machine Learning-based Fraud Detection System** that classifies credit card transactions as:
 
 -  Normal (0)
@@ -8,13 +8,13 @@ This project is a **Machine Learning-based Fraud Detection System** that classif
 
 Using multiple classification algorithms, the best model is selected based on performance metrics.
 
----
+
 ##  Dataset
 The dataset is too large to be uploaded on GitHub due to size limitations.
 
 -> [Download Dataset](https://drive.google.com/file/d/1tXxuArcMPaqKBH6QfiwhF32wOy39pEFs/view?usp=sharing)
 
----
+
 
 ##  ML Pipeline (Step-by-Step)
 
@@ -101,7 +101,7 @@ Hyperparameter tuning done using **GridSearchCV**
 
  Selected as final production model
 
----
+
 
 ##  Tech Stack
 - Python 
@@ -112,7 +112,7 @@ Hyperparameter tuning done using **GridSearchCV**
 - Matplotlib & Seaborn
 - Joblib
 
----
+
 
 ##  Future Improvements
 - Real-time fraud detection API
@@ -120,7 +120,8 @@ Hyperparameter tuning done using **GridSearchCV**
 - Flask / FastAPI deployment
 - Continuous learning system
 
----
+
+
 
 ##  Author: Saman Tarique
 Credit Card Fraud Detection Project using Machine Learning
