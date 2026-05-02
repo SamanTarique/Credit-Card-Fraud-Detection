@@ -9,6 +9,12 @@ This project is a **Machine Learning-based Fraud Detection System** that classif
 Using multiple classification algorithms, the best model is selected based on performance metrics.
 
 ---
+##  Dataset
+The dataset is too large to be uploaded on GitHub due to size limitations.
+
+-> [Download Dataset](https://drive.google.com/file/d/1tXxuArcMPaqKBH6QfiwhF32wOy39pEFs/view?usp=sharing)
+
+---
 
 ##  ML Pipeline (Step-by-Step)
 
