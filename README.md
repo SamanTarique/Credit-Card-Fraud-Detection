@@ -16,81 +16,92 @@ The dataset is too large to be uploaded on GitHub due to size limitations.
 
 
 
-##  ML Pipeline (Step-by-Step)
+##  Machine Learning Pipeline (Step-by-Step)
 
-### 1️) Problem Definition
-Fraud detection is a **binary classification problem** in an imbalanced dataset.
-
----
-
-### 2️) Data Collection
-- Credit card transaction dataset
-- Features: V1–V28, Time, Amount
-- Target: Class (0 = Normal, 1 = Fraud)
+### 1) Problem Definition
+**Objective:** Defined the problem of credit card fraud, its impact, and the need for an automated detection system. Outlined project objectives and scope.
 
 ---
 
-### 3️) Data Cleaning & Preprocessing
-- Removed duplicates
-- Handled missing values
-- Feature scaling using StandardScaler / RobustScaler
+### 2) Data Collection
+**Objective:** Used a credit card transaction dataset from Kaggle. Explored its characteristics, including transaction types (normal vs fraud) and data structure.
 
 ---
 
-### 4️) Exploratory Data Analysis (EDA)
-- Class imbalance analysis
-- Fraud vs Normal visualization
-- Time & Amount distribution study
+### 3) Data Cleaning & Preprocessing
+**Objective:** Prepared the dataset for modeling:
+- Checked for missing values  
+- Removed duplicates  
+- Scaled 'Amount' using RobustScaler  
+- Extracted 'Hour' feature from 'Time'
+
+  ---
+  
+
+### 4) Exploratory Data Analysis (EDA)
+**Objective:** Analyzed dataset patterns:
+- Studied class imbalance  
+- Compared fraud vs normal transactions  
+- Analyzed time and amount distributions  
+- Checked feature correlations  
 
 ---
 
-### 5️) Feature Engineering
-- Hour extracted from Time
-- Created Is_Night feature
-- Log transformation on Amount
-- Scaled numerical values
+### 5) Feature Engineering & Selection
+**Objective:** Improved model performance:
+- Created 'Is_Night' and 'Amount_Log' features  
+- Defined input features (X) and target variable (y)
 
 ---
 
-### 6️) Feature Selection
-- Important engineered features selected
-- PCA features (V1–V28) handled carefully
+
+### 6) Model Selection
+**Objective:** Selected suitable ML models:
+- Logistic Regression  
+- Random Forest  
+- XGBoost  
+- Applied SMOTE to handle class imbalance  
+- Performed train-test split  
 
 ---
 
-### 7️) Model Selection
-Models used:
-- Logistic Regression
-- Random Forest
-- XGBoost
+### 7) Model Training
+**Objective:** Trained models on processed data to learn fraud patterns.
 
 ---
 
-### 8️) Model Training
-- Train-test split applied
-- SMOTE used for imbalance handling
-- Supervised learning approach
+### 8) Model Evaluation & Tuning
+**Objective:** Evaluated models using:
+- Accuracy  
+- Precision  
+- Recall (important for fraud detection)  
+- F1-score  
+- Confusion Matrix  
+
+Performed hyperparameter tuning using GridSearchCV (Random Forest).
 
 ---
 
-### 9️) Model Evaluation & Tuning
-Metrics used:
-- Accuracy
-- Precision
-- Recall (most important for fraud)
-- F1-score
-- Confusion Matrix
 
-Hyperparameter tuning done using **GridSearchCV**
+### 9) Model Deployment
+**Objective:** Prepared the best model for use:
+- Saved trained model  
+- Created prediction function for new transactions
+  
+  Prediction Output
+  ![Predict Output](output 2.png)
 
----
+  ---
+  
 
-### 10) Model Deployment & Monitoring
-- Best model saved using Joblib
-- Continuous monitoring required for fraud pattern changes
-- Model retraining when needed
-
----
+### 10) Monitoring & Maintenance
+**Objective:** Ensured long-term performance:
+- Monitor model performance  
+- Detect data drift  
+- Retrain model when needed
+  
+  ---
+  
 
 ##  Best Model Performance
 
@@ -100,7 +111,7 @@ Hyperparameter tuning done using **GridSearchCV**
 -  Lowest Errors: **1257**
 
  Selected as final production model
-
+![Model Output](outpu1.png)
 
 
 ##  Tech Stack
