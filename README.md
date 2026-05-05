@@ -24,7 +24,8 @@ The dataset is too large to be uploaded on GitHub due to size limitations.
 ---
 
 ### 2) Data Collection
-**Objective:** Used a credit card transaction dataset from Kaggle. Explored its characteristics, including transaction types (normal vs fraud) and data structure.
+**Objective:** Used a credit card transaction dataset from Kaggle.
+- Explored its characteristics, including transaction types (normal vs fraud) and data structure.
 
 ---
 
@@ -35,7 +36,7 @@ The dataset is too large to be uploaded on GitHub due to size limitations.
 - Scaled 'Amount' using RobustScaler  
 - Extracted 'Hour' feature from 'Time'
 
-  ---
+---
   
 
 ### 4) Exploratory Data Analysis (EDA)
@@ -88,10 +89,11 @@ Performed hyperparameter tuning using GridSearchCV (Random Forest).
 - Saved trained model  
 - Created prediction function for new transactions
   
-  Prediction Output
-  ![Predict Output](output 2.png)
+    Prediction Output
+  
+  ![Predict Output](output2.png)
 
-  ---
+---
   
 
 ### 10) Monitoring & Maintenance
@@ -100,7 +102,7 @@ Performed hyperparameter tuning using GridSearchCV (Random Forest).
 - Detect data drift  
 - Retrain model when needed
   
-  ---
+---
   
 
 ##  Best Model Performance
@@ -111,6 +113,7 @@ Performed hyperparameter tuning using GridSearchCV (Random Forest).
 -  Lowest Errors: **1257**
 
  Selected as final production model
+ 
 ![Model Output](outpu1.png)
 
 
